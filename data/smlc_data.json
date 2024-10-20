@@ -1,0 +1,64 @@
+{
+  "levels": {
+    "individual": {
+      "axes": {
+        "X": {
+          "label": "Individualism vs. Collectivism",
+          "values": ["Highly Collectivist", "Moderately Collectivist", "Balanced", "Moderately Individualistic", "Highly Individualistic"]
+        },
+        "Y": {
+          "label": "Emotional vs. Rational",
+          "values": ["Highly Emotional", "Moderately Emotional", "Balanced", "Moderately Rational", "Highly Rational"]
+        },
+        "Z": {
+          "label": "Risk-Averse vs. Risk-Taking",
+          "values": ["Highly Risk-Averse", "Moderately Risk-Averse", "Balanced", "Moderately Risk-Taking", "Highly Risk-Taking"]
+        }
+      },
+      "descriptions": {
+        "default": "You are exploring a balanced leadership style that harmonizes individual goals with collective needs, balances emotions with rationality, and approaches risk with caution.",
+        "example": "A leader focusing on personal growth, making data-driven decisions, and embracing calculated risks."
+      }
+    },
+    "organization": {
+      "axes": {
+        "X": {
+          "label": "Hierarchical vs. Flat Structure",
+          "values": ["Strict Hierarchy", "Moderate Hierarchy", "Balanced", "Moderately Flat", "Flat Structure"]
+        },
+        "Y": {
+          "label": "Task-Oriented vs. People-Oriented",
+          "values": ["Highly Task-Oriented", "Moderately Task-Oriented", "Balanced", "Moderately People-Oriented", "Highly People-Oriented"]
+        },
+        "Z": {
+          "label": "Process-Driven vs. Innovation-Driven",
+          "values": ["Highly Process-Driven", "Moderately Process-Driven", "Balanced", "Moderately Innovation-Driven", "Highly Innovation-Driven"]
+        }
+      },
+      "descriptions": {
+        "default": "Exploring organizational dynamics that balance structure with flexibility, and processes with innovation.",
+        "example": "An organization emphasizing team collaboration, prioritizing employee well-being, and fostering innovation."
+      }
+    },
+    "society": {
+      "axes": {
+        "X": {
+          "label": "Economic Systems",
+          "values": ["Collectivist Economy", "Moderately Collectivist", "Mixed Economy", "Moderately Free Market", "Free Market Economy"]
+        },
+        "Y": {
+          "label": "Human-Centric vs. System-Centric",
+          "values": ["Highly Human-Centric", "Moderately Human-Centric", "Balanced", "Moderately System-Centric", "Highly System-Centric"]
+        },
+        "Z": {
+          "label": "Data-Driven vs. Intuition-Driven",
+          "values": ["Highly Intuition-Driven", "Moderately Intuition-Driven", "Balanced", "Moderately Data-Driven", "Highly Data-Driven"]
+        }
+      },
+      "descriptions": {
+        "default": "Exploring societal dynamics that balance economic models, governance approaches, and social values.",
+        "example": "A society valuing community welfare, making policy decisions based on empirical data, and encouraging technological advancements."
+      }
+    }
+  }
+}

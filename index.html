@@ -1,53 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>T:mi Sina Ghazi is now operating as INNOVATEGY</title>
-    <meta http-equiv="refresh" content="15; URL=https://innovategy.fi" />
-    <link rel="me" href="https://mastodon.social/@sinaghazi">
-    <link rel="stylesheet" href="style.css">
-</head>
+  <meta charset="UTF-8">
+  <title>Sina's Multidimensional Leadership Cube | Discover Multidimensional Leadership Dynamics</title>
 
-<script type="text/javascript">
-    var count = 15;
-    var redirect = "https://innovategy.fi";
+  <!-- Meta Tags for SEO -->
+  <meta name="description" content="Explore Sina's Multidimensional Leadership Cube (SMLC) to gain insights into personal, organizational, and societal leadership dynamics.">
+  <meta name="keywords" content="SMLC, Leadership Cube, Multidimensional Leadership, Leadership Model, Organizational Dynamics, Personal Development">
+  <meta name="author" content="Sina">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    function countDown() {
-        var timer = document.getElementById("timer");
-        if (count > 0) {
-            count--;
-            timer.innerHTML = "This page will redirect in " + count + " seconds.";
-            setTimeout("countDown()", 1000);
-        } else {
-            window.location.href = redirect;
-        }
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Sina's Multidimensional Leadership Cube">
+  <meta property="og:description" content="Discover a new perspective on leadership dynamics with the SMLC model.">
+  <meta property="og:image" content="https://sinaghazi.com/img/og-image.png">
+  <meta property="og:url" content="https://sinaghazi.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sina's Multidimensional Leadership Cube">
+  <meta name="twitter:description" content="Discover a new perspective on leadership dynamics with the SMLC model.">
+  <meta name="twitter:image" content="https://sinaghazi.com/img/twitter-card.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/icon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+
+  <!-- Stylesheets and Fonts -->
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- Import Map for Modules -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+      }
     }
-</script>
-
+  </script>
+</head>
 <body>
+<!-- Header -->
+<header>
+  <div class="container">
+    <a href="#" class="logo">
+      <img src="img/sg-logo-transparent.png" alt="SG Logo">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About SMLC</a></li>
+        <li><a href="explore.html">Explore the Model</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-<div id="master-wrap">
-    <div id="logo-box">
-
-        <div class="animated fast fadeInUp">
-            <div class="icon"></div>
-            <h1>Notice</h1>
-        </div>
-
-        <div class="notice animated fadeInUp">
-            <p class="lead">T:mi Sina Ghazi operates as INNOVATEGY<sup>&reg;</sup></p>
-            <a class="btn animation" href="https://innovategy.fi"> Discover &rarr; </a>
-        </div>
-
-        <div class="footer animated slow fadeInUp">
-            <p id="timer">
-                <script type="text/javascript">
-                    countDown();
-                </script>
-            </p>
-            <p class="copyright">&copy; 2022, T:mi Sina Ghazi </p>
-        </div>
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <h1>Discover Sina's Multidimensional Leadership Cube</h1>
+    <h2>A new perspective on leadership dynamics</h2>
+    <div class="scroll-down">
+      <a href="#introduction">&#x25BC;</a>
     </div>
-</div>
+  </div>
+</section>
+
+<!-- Introduction Section -->
+<section class="introduction" id="introduction">
+  <div class="container">
+    <p>
+      In today's complex world, leadership requires a multidimensional approach.
+      The SMLC model provides insights into personal, organizational, and societal dynamics,
+      helping you navigate and lead more effectively.
+    </p>
+  </div>
+</section>
+
+<!-- Interactive Cube Section -->
+<section class="interactive">
+  <div class="container">
+    <h2>Explore the Dimensions of Leadership</h2>
+    <div class="selection-options">
+      <button class="selection-btn active" data-type="individual">Individual</button>
+      <button class="selection-btn" data-type="organization">Organization/Business</button>
+      <button class="selection-btn" data-type="society">Society/Country</button>
+    </div>
+    <p>Adjust the sliders below to see how different factors influence leadership styles within the multidimensional cube.</p>
+    <div class="cube-and-controls">
+      <div id="cube-container"></div>
+      <div class="controls">
+        <div class="slider-group">
+          <label for="xRange" id="xLabel">Individualism vs. Collectivism</label>
+          <input type="range" id="xRange" name="xRange" min="1" max="5" value="3" step="1">
+        </div>
+        <div class="slider-group">
+          <label for="yRange" id="yLabel">Emotional vs. Rational</label>
+          <input type="range" id="yRange" name="yRange" min="1" max="5" value="3" step="1">
+        </div>
+        <div class="slider-group">
+          <label for="zRange" id="zLabel">Risk-Averse vs. Risk-Taking</label>
+          <input type="range" id="zRange" name="zRange" min="1" max="5" value="3" step="1">
+        </div>
+      </div>
+    </div>
+    <div class="description-box" id="descriptionBox">
+      You are exploring a balanced leadership style that harmonizes individual goals with collective needs,
+      balances emotions with rationality, and approaches risk with caution.
+    </div>
+  </div>
+</section>
+
+<!-- Further Exploration -->
+<section class="further-exploration">
+  <div class="container">
+    <p>Want to learn more about how the SMLC model can benefit you?</p>
+    <div class="buttons">
+      <a href="#" class="btn">Learn More About SMLC</a>
+      <a href="#" class="btn">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- License Explainer -->
+<section class="license-explainer">
+  <div class="container">
+    <h2>License</h2>
+    <p>
+      Sina's Multidimensional Leadership Cube (SMLC) is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> license.
+      You are free to share and adapt the material for any purpose, even commercially, as long as appropriate credit is given.
+    </p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="social-media">
+      <a href="https://www.linkedin.com/in/sinaghazi" target="_blank">
+        <img src="img/linkedin-icon.png" alt="LinkedIn">
+      </a>
+    </div>
+    <div class="footer-links">
+      <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Include app.js as a module -->
+<script type="module" src="js/app.js"></script>
 </body>
 </html>
